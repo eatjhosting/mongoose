@@ -1,0 +1,29 @@
+{
+  "name": "mongo_demo",
+  "version": "1.0.0",
+  "description": "EATJ demo",
+  "main": "mongo_demo.js",
+  "scripts": {
+    "test": "node mongo_demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcai/mongoose.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "node",
+    "js",
+    "helloworld"
+  ],
+  "author": "EATJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcai/mongoose/issues"
+  },
+  "homepage": "https://github.com/gcai/mongoose#readme",
+  "dependencies": {
+    "mongoose": "^4.3.6"
+  }
+}
