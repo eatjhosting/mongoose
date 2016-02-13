@@ -2,9 +2,9 @@
 var mongoose = require('mongoose');
 
 //Please find your mongo DB URL in http://nodejs.eatj.com/account.jsp
-var mongodbURI = 'put your mongo db URL here';
+var mongodbURI = ''; //Put your mongo DB URI here
 
-if(mongodbURI == 'put your mongo db URL here') 
+if(mongodbURI == '') 
 {
 	console.log('Please find your mongo DB URI at http://nodejs.eatj.com/account.jsp. Put the URI in mongo_demo.js');
 	process.exit();
