@@ -9,7 +9,7 @@ if(mongodbURI == 'put your mongo db URL here')
 	console.log('Please find your mongo DB URI at http://nodejs.eatj.com/account.jsp. Put the URI in mongo_demo.js');
 	process.exit();
 }
-mongoose.connect('mongodb://tcai:gcagcai@homeip/gcai');
+mongoose.connect(mongodbURI);
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -37,6 +37,7 @@ db.once('open', function() {
 	Kitten.find({ name: /^fluff/ }, function (err, kittens) {
  		if (err) return console.error(err);
   		console.log(kittens);
+		process.exit();
 	});
 	
 });
